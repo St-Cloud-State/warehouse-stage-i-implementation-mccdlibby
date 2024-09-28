@@ -1,30 +1,21 @@
 public class WishListTester {
     public static void main(String[] args) {
-        // Initialize clients and products
-        Client client1 = new Client("John Doe");
-        Client client2 = new Client("Jane Smith");
+        // Initialize members
+        Member member1 = new Member("m1");
+        Member member2 = new Member("m2");
 
-        Product product1 = new Product("P1", "Laptop");
-        Product product2 = new Product("P2", "Smartphone");
+        // Initialize books (which are acting as products in the wishlist)
+        Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "b1");
+        Book book2 = new Book("1984", "George Orwell", "b2");
 
-        // Initialize wishlist
+        // Initialize the wishlist
         WishList wishList = new WishList();
 
         // Add items to the wishlist
-        wishList.addToWishList(client1, product1, 1);
-        wishList.addToWishList(client2, product2, 2);
+        wishList.addToWishList(member1, book1, 1);
+        wishList.addToWishList(member2, book2, 2);
 
         // Display the wishlist
         wishList.displayWishList();
-
-        // Save the wishlist to a file
-        wishList.saveWishList("wishlist_data.dat");
-
-        // Load the wishlist back from the file
-        WishList loadedWishList = WishList.loadWishList("wishlist_data.dat");
-        if (loadedWishList != null) {
-            System.out.println("Loaded wishlist:");
-            loadedWishList.displayWishList();
-        }
     }
 }
