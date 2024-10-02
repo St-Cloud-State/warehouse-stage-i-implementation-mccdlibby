@@ -1,0 +1,20 @@
+Script started on 2024-10-02 01:37:33+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="192" LINES="23"]
+[0;32m@mccdlibby [0m➜ [1;34m/workspaces/warehouse-stage-i-implementation-mccdlibby/BookTest [0;36m([1;31mmain[0;36m) [0m$ javac Client.java Product.java WishItem.java WishList.java WishlistTester[K[K[K[K[K[K[K[K[K[KListTester.java
+[0;32m@mccdlibby [0m➜ [1;34m/workspaces/warehouse-stage-i-implementation-mccdlibby/BookTest [0;36m([1;31mmain[0;36m) [0m$ java WishListTester
+C1 wished for Laptop x 2
+C2 wished for Smartphone x 1
+Client 1's wishlist:
+C1 wished for Laptop x 2
+Client 2's wishlist:
+C2 wished for Smartphone x 1
+Wishlist before saving:
+C1 wished for Laptop x 2
+C2 wished for Smartphone x 1
+Wishlist saved successfully.
+Wishlist after loading:
+C1 wished for Laptop x 2
+C2 wished for Smartphone x 1
+[0;32m@mccdlibby [0m➜ [1;34m/workspaces/warehouse-stage-i-implementation-mccdlibby/BookTest [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2024-10-02 01:38:15+00:00 [COMMAND_EXIT_CODE="0"]
