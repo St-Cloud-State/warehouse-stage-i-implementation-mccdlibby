@@ -1,32 +1,30 @@
 public class WishItem {
-    private Member member;  // Using Member instead of Client
-    private Book book;  // Using Book instead of Product
-    private int quantity;
+    private Client client;  // The client adding items to their wishlist
+    private Product product;  // The product they are adding
+    private int quantity;  // The quantity of the product desired
 
-    // Constructor
-    public WishItem(Member member, Book book, int quantity) {
-        this.member = member;
-        this.book = book;
+    // Constructor to initialize the WishItem
+    public WishItem(Client client, Product product, int quantity) {
+        this.client = client;
+        this.product = product;
         this.quantity = quantity;
     }
 
-    // Getter for member
-    public Member getMember() {
-        return member;
+    // Getters for the fields
+    public Client getClient() {
+        return client;
     }
 
-    // Getter for book
-    public Book getBook() {
-        return book;
+    public Product getProduct() {
+        return product;
     }
 
-    // Getter for quantity
     public int getQuantity() {
         return quantity;
     }
 
     @Override
     public String toString() {
-        return member.getId() + " wished for " + book.getTitle() + " x " + quantity;
+        return client.getId() + " wished for " + product.getTitle() + " x " + quantity;
     }
 }
