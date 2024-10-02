@@ -1,4 +1,6 @@
-public class WishItem {
+import java.io.Serializable;
+
+public class WishItem implements Serializable{
     private Client client;  // The client adding items to their wishlist
     private Product product;  // The product they are adding
     private int quantity;  // The quantity of the product desired
