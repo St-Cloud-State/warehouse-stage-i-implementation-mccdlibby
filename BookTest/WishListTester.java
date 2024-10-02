@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 public class WishListTester {
 
     public static void main(String[] args) {

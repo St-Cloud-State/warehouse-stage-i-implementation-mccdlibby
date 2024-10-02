@@ -25,6 +25,6 @@ public class WishItem {
 
     @Override
     public String toString() {
-        return client.getId() + " wished for " + product.getTitle() + " x " + quantity;
+        return client.getId() + " wished for " + product.getName() + " x " + quantity;
     }
 }
